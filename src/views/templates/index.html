@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Jugal Manjeshwar - Resume</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='style.css') }}"><link rel="stylesheet" type="text/css" href="{{ url_for('static', path='style.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Source+Sans+Pro:400,400i" rel="stylesheet">
+    <body>
+        <div class="page">
+            <div class="section row">
+                <h1 class="col">{{person.name}}</h1>
+                <div class="contact-info col-right">
+                    <div>{{person.phonenumber}}</div>
+                    <div><a href="{{person.name}}">{{person.email}}</a></div>
+                    <div><a href="{{person.github}}">{{person.github}}</a></div>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">Interests</h2>
+                <div class="section-text col-right"><span class="key">Intelligent systems</span> <span class="key">Machine learning</span> <span class="key">Data visualization</span> <span class="key">Computer vision &amp; graphics</span> </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">Skills</h2>
+                <div class="section-text col-right row">
+                    <ul class="skills" style="width:25%">
+                        <li>Python, SQL</li>
+                    </ul>
+                    <ul class="skills" style="width:35%">
+                        <li>Pytourch, Scikitlearn, Scipy</li>
+                        <li>fastapi, Sqlalchemy</li>
+                        
+                    </ul>
+                    <ul class="skills">
+                        <li>Mssql, MongoDB</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">Education</h2>
+               
+                <div class="section-text col-right">
+                    <h3><span class="emph">Bachelors Degree</h3>
+                    <div>Kastamonu University</div>
+                    <div class="row">
+                        <div class="col light">Kastamonu, Turkey</div>
+                        <div class="col-right light	">September 2016 - July 2021	</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">Experience</h2>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Smart Maple</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="emph col">Junior Data Scientist</div>
+                        <div class="col-right light">July 2022 - Present</div>
+                    </div>
+                    <ul class="desc">
+                        <li>Data mining</li>
+                        <li>Data base management</li>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">Projects</h2>
+                <div class="section-text col-right">
+                    <h3><a href="https://github.com/Canahmetozguven">https://github.com/Canahmetozguven</a></h3>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
